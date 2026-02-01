@@ -268,6 +268,133 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Speaker"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LS"
+				(at 1.27 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "Speaker"
+				(at 1.27 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at -0.254 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Speaker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "speaker sound"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Speaker_0_0"
+				(rectangle
+					(start -2.54 1.27)
+					(end 1.016 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.27) (xy 3.556 3.81) (xy 3.556 -6.35) (xy 1.016 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Speaker_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_RaspberryPi:RP2040"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2757,6 +2884,18 @@
 		(uuid "e1bd56e4-8885-481f-969c-9a47e082c2c3")
 	)
 	(junction
+		(at 215.9 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08ae3087-93fe-44da-947e-cc932b5c0e3f")
+	)
+	(junction
+		(at 215.9 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11d02179-85d6-4df5-b263-7c467c497797")
+	)
+	(junction
 		(at 165.1 21.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2895,6 +3034,12 @@
 		(uuid "9d346e63-75c7-4f74-b27d-0577b01c7b37")
 	)
 	(junction
+		(at 215.9 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ece89ef-457f-49b4-9080-7a77690a545c")
+	)
+	(junction
 		(at 149.86 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2943,6 +3088,12 @@
 		(uuid "e093f1c1-befe-42c3-b0e9-2db9cd2a6847")
 	)
 	(junction
+		(at 215.9 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebc10cce-e723-4d5f-ac3f-531b3a5812fc")
+	)
+	(junction
 		(at 55.88 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2980,6 +3131,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 83.82) (xy 193.04 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0781ff6f-c24e-4b90-a70d-6d3f08526216")
+	)
+	(wire
+		(pts
 			(xy 27.94 114.3) (xy 33.02 114.3)
 		)
 		(stroke
@@ -3000,6 +3161,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 83.82) (xy 266.7 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba71e68-330c-4a6b-8d22-e54eac894d48")
+	)
+	(wire
+		(pts
 			(xy 30.48 139.7) (xy 35.56 139.7)
 		)
 		(stroke
@@ -3017,6 +3188,26 @@
 			(type default)
 		)
 		(uuid "103c2cc8-59a1-48f0-8abf-958502c435f5")
+	)
+	(wire
+		(pts
+			(xy 193.04 93.98) (xy 200.66 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "105b5493-133f-402c-aab9-96d31e799194")
+	)
+	(wire
+		(pts
+			(xy 215.9 124.46) (xy 215.9 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10ed8323-1368-4f84-9206-9a233fc4f074")
 	)
 	(wire
 		(pts
@@ -3070,6 +3261,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 104.14) (xy 215.9 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17f6ef98-19c3-4e21-92cd-14075d4ce534")
+	)
+	(wire
+		(pts
 			(xy 55.88 149.86) (xy 55.88 152.4)
 		)
 		(stroke
@@ -3110,6 +3311,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 93.98) (xy 215.9 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e42c012-edfe-4584-9ba2-3b2a6faf6cc4")
+	)
+	(wire
+		(pts
 			(xy 116.84 104.14) (xy 127 104.14)
 		)
 		(stroke
@@ -3117,6 +3328,16 @@
 			(type default)
 		)
 		(uuid "1f5f8096-6490-412d-8bef-fae3994bb413")
+	)
+	(wire
+		(pts
+			(xy 210.82 93.98) (xy 215.9 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ff8de5b-34e2-47e8-8db9-b7f7ae3fba59")
 	)
 	(wire
 		(pts
@@ -3238,6 +3459,16 @@
 		)
 		(uuid "35a3c69a-5d32-43eb-9176-4219e24e51f9")
 	)
+	(wire
+		(pts
+			(xy 254 93.98) (xy 264.16 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36ccc289-fcec-49fe-a5ea-b20a52dc89ab")
+	)
 	(polyline
 		(pts
 			(xy 12.7 127) (xy 76.2 127)
@@ -3277,6 +3508,16 @@
 			(type default)
 		)
 		(uuid "3ff04d04-a163-4c8d-9422-b8031240315c")
+	)
+	(wire
+		(pts
+			(xy 259.08 68.58) (xy 259.08 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45723043-d5ee-450a-bdf1-53149c45f904")
 	)
 	(wire
 		(pts
@@ -3330,6 +3571,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 91.44) (xy 185.42 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ebaec8b-08bf-40ef-9994-c1955ee78585")
+	)
+	(wire
+		(pts
 			(xy 17.78 88.9) (xy 20.32 88.9)
 		)
 		(stroke
@@ -3360,6 +3611,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 68.58) (xy 259.08 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5421add3-ecdd-4ebd-8602-4d4b136cbfe4")
+	)
+	(wire
+		(pts
 			(xy 116.84 127) (xy 127 127)
 		)
 		(stroke
@@ -3377,6 +3638,16 @@
 			(type default)
 		)
 		(uuid "57ee072e-80b1-4998-bf53-80b5e0f843d6")
+	)
+	(wire
+		(pts
+			(xy 210.82 83.82) (xy 215.9 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5822f8cf-f8a4-4f73-bc8b-6958eb1e27e2")
 	)
 	(wire
 		(pts
@@ -3460,6 +3731,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 68.58) (xy 228.6 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b2cbcd1-d614-4191-8fe8-f8f83a766dc1")
+	)
+	(wire
+		(pts
 			(xy 27.94 54.61) (xy 38.1 54.61)
 		)
 		(stroke
@@ -3467,6 +3748,16 @@
 			(type default)
 		)
 		(uuid "6cf6d181-e13a-4199-b6e2-7818f85eef3e")
+	)
+	(wire
+		(pts
+			(xy 226.06 83.82) (xy 259.08 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6da0a0dc-3469-44fb-b7bb-ced379d01af9")
 	)
 	(polyline
 		(pts
@@ -3528,6 +3819,16 @@
 		)
 		(uuid "7b4baa41-f44e-48b9-aa12-419e28b52478")
 	)
+	(wire
+		(pts
+			(xy 185.42 91.44) (xy 185.42 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cf95c15-1513-47c1-a60c-966e67e26c95")
+	)
 	(polyline
 		(pts
 			(xy 76.2 101.6) (xy 76.2 127)
@@ -3560,6 +3861,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 71.12) (xy 256.54 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84a5e7f5-600a-4db9-96ff-a8cbb1e31947")
+	)
+	(wire
+		(pts
 			(xy 53.34 139.7) (xy 55.88 139.7)
 		)
 		(stroke
@@ -3567,6 +3878,56 @@
 			(type default)
 		)
 		(uuid "85a5d15c-3dc8-4f5f-8eb3-c19e9192b588")
+	)
+	(wire
+		(pts
+			(xy 210.82 124.46) (xy 215.9 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85b52681-c3e6-4d13-a8e5-dbf74ef09f2b")
+	)
+	(wire
+		(pts
+			(xy 187.96 114.3) (xy 200.66 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "872fcc7a-b1d3-49b8-b898-0a87b04927b0")
+	)
+	(wire
+		(pts
+			(xy 190.5 104.14) (xy 200.66 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d266fc2-d1f3-4188-bdfd-cc4bcb423407")
+	)
+	(wire
+		(pts
+			(xy 264.16 83.82) (xy 264.16 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d9a1d40-9eaa-4361-88b5-3a84c5bce258")
+	)
+	(wire
+		(pts
+			(xy 177.8 81.28) (xy 195.58 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e24982e-0074-424c-bb51-e3a4c25ee35e")
 	)
 	(wire
 		(pts
@@ -3620,6 +3981,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 81.28) (xy 223.52 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ecda33-a146-41cb-ba98-fe86f1401209")
+	)
+	(wire
+		(pts
 			(xy 203.2 29.21) (xy 215.9 29.21)
 		)
 		(stroke
@@ -3660,6 +4031,26 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 86.36) (xy 190.5 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1a0518b-74fd-4562-9e4c-84acc6760ddc")
+	)
+	(wire
+		(pts
+			(xy 185.42 124.46) (xy 200.66 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8afaae3-0eef-4d4b-95d7-eb85889a74a3")
+	)
+	(wire
+		(pts
 			(xy 88.9 29.21) (xy 101.6 29.21)
 		)
 		(stroke
@@ -3680,6 +4071,36 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 91.44) (xy 228.6 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9d72657-1fd2-4ac5-8434-2631be9b8a97")
+	)
+	(wire
+		(pts
+			(xy 223.52 93.98) (xy 228.6 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1073feb-2455-44f5-96d8-e98529fb1c1b")
+	)
+	(wire
+		(pts
+			(xy 187.96 88.9) (xy 187.96 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1a857b7-6061-43e2-aca3-546ed7329126")
+	)
+	(wire
+		(pts
 			(xy 13.97 26.67) (xy 24.13 26.67)
 		)
 		(stroke
@@ -3690,6 +4111,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 83.82) (xy 215.9 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b301c8eb-4a00-4a7a-a0c9-dfe7adbf241e")
+	)
+	(wire
+		(pts
 			(xy 116.84 134.62) (xy 127 134.62)
 		)
 		(stroke
@@ -3697,6 +4128,16 @@
 			(type default)
 		)
 		(uuid "b7aa4de1-8cda-437d-b172-1738dff094a1")
+	)
+	(wire
+		(pts
+			(xy 177.8 83.82) (xy 193.04 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b963647f-9327-421e-871b-cf6940a3da6e")
 	)
 	(wire
 		(pts
@@ -3728,6 +4169,16 @@
 		)
 		(uuid "be231f9b-9658-4865-8355-a2868ba3cd69")
 	)
+	(wire
+		(pts
+			(xy 254 96.52) (xy 266.7 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bebb5fcd-eed2-4d25-9806-00bff2bbc7d9")
+	)
 	(polyline
 		(pts
 			(xy 12.7 101.6) (xy 12.7 127)
@@ -3747,6 +4198,16 @@
 			(type default)
 		)
 		(uuid "c42c510e-ad38-4f8c-bb28-81f52be7f480")
+	)
+	(wire
+		(pts
+			(xy 177.8 88.9) (xy 187.96 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c50116c0-54ee-43e4-a25f-23ca803c9dd6")
 	)
 	(wire
 		(pts
@@ -3770,6 +4231,36 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 114.3) (xy 215.9 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbaba2a5-02af-4477-96ae-214412b540ea")
+	)
+	(wire
+		(pts
+			(xy 220.98 76.2) (xy 220.98 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc52ae87-d561-4612-aa43-018e1f1c2650")
+	)
+	(wire
+		(pts
+			(xy 215.9 114.3) (xy 215.9 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf68bf3d-4d06-4b52-b089-3996c666460a")
+	)
+	(wire
+		(pts
 			(xy 30.48 152.4) (xy 30.48 149.86)
 		)
 		(stroke
@@ -3777,6 +4268,26 @@
 			(type default)
 		)
 		(uuid "d0c5f7bd-a91f-46ef-8c66-be04096689eb")
+	)
+	(wire
+		(pts
+			(xy 210.82 104.14) (xy 215.9 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d20c9064-ab68-484d-9837-d1809afa4077")
+	)
+	(wire
+		(pts
+			(xy 223.52 81.28) (xy 256.54 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2dc6c8e-106d-4dbf-a984-fa5dbe39c51c")
 	)
 	(wire
 		(pts
@@ -3790,6 +4301,26 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 81.28) (xy 195.58 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3e434e3-e23b-4cd1-9227-606bf42f2107")
+	)
+	(wire
+		(pts
+			(xy 226.06 83.82) (xy 226.06 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d46bdf81-8360-49eb-a9d6-71a8a33069d4")
+	)
+	(wire
+		(pts
 			(xy 55.88 139.7) (xy 67.31 139.7)
 		)
 		(stroke
@@ -3797,6 +4328,16 @@
 			(type default)
 		)
 		(uuid "d4d3e584-7ad3-4ba5-bb13-41258e262df4")
+	)
+	(wire
+		(pts
+			(xy 261.62 81.28) (xy 261.62 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d60cc91e-224f-4151-91b2-237b3870e691")
 	)
 	(wire
 		(pts
@@ -3828,6 +4369,16 @@
 		)
 		(uuid "dbf9a028-89ce-4715-b4c0-cbe233e152a9")
 	)
+	(wire
+		(pts
+			(xy 220.98 99.06) (xy 228.6 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e04d5f47-69a7-4366-9aaa-b81b3fa79cb6")
+	)
 	(polyline
 		(pts
 			(xy 76.2 127) (xy 76.2 165.1)
@@ -3837,6 +4388,16 @@
 			(type default)
 		)
 		(uuid "e228830c-2f99-4eb1-9f06-b26adca9cad0")
+	)
+	(wire
+		(pts
+			(xy 177.8 71.12) (xy 228.6 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3529d7c-26a8-4b9d-befa-d8ca2a29807e")
 	)
 	(wire
 		(pts
@@ -3857,6 +4418,16 @@
 			(type default)
 		)
 		(uuid "e689cff0-fdc0-45cd-aefb-dfa5bbfa7fe3")
+	)
+	(wire
+		(pts
+			(xy 254 99.06) (xy 266.7 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e706a6b5-f7c0-4542-b18e-40e7da506999")
 	)
 	(wire
 		(pts
@@ -3918,6 +4489,26 @@
 		)
 		(uuid "f029764d-a982-49a2-beea-7b2f8600b8b1")
 	)
+	(wire
+		(pts
+			(xy 177.8 76.2) (xy 220.98 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0e48afd-7386-4ecb-bd6f-48fdc0d1b9d3")
+	)
+	(wire
+		(pts
+			(xy 195.58 83.82) (xy 200.66 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f482eb56-a812-4b33-9b0e-5fe9cead6de1")
+	)
 	(polyline
 		(pts
 			(xy 12.7 38.1) (xy 12.7 76.2)
@@ -3927,6 +4518,26 @@
 			(type default)
 		)
 		(uuid "f4944c81-5d01-49f7-bc51-b3ce31b8a484")
+	)
+	(wire
+		(pts
+			(xy 254 91.44) (xy 261.62 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5009d8e-3d34-4178-825f-6ccfc7970d8d")
+	)
+	(wire
+		(pts
+			(xy 254 71.12) (xy 256.54 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f51ca2a8-b0cf-4f1e-bb1e-ecd0f5b7fc5b")
 	)
 	(polyline
 		(pts
@@ -3940,6 +4551,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 73.66) (xy 228.6 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9acc615-1b56-4b01-b0a4-2eaeacc80574")
+	)
+	(wire
+		(pts
 			(xy 116.84 99.06) (xy 127 99.06)
 		)
 		(stroke
@@ -3947,6 +4568,26 @@
 			(type default)
 		)
 		(uuid "fad0fb86-69c5-4de6-ae9b-6a3186f7868f")
+	)
+	(wire
+		(pts
+			(xy 190.5 86.36) (xy 190.5 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fba0446d-33f0-4c3a-97b6-b34f4d82b3fe")
+	)
+	(wire
+		(pts
+			(xy 261.62 81.28) (xy 266.7 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbe79d75-bf03-4860-8bfb-66265c0f04bd")
 	)
 	(polyline
 		(pts
@@ -4571,6 +5212,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 205.74 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "138f34d2-a0ae-47be-96ac-7cdcce44de8c")
+		(property "Reference" "SW4"
+			(at 205.74 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 205.74 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_1u"
+			(at 205.74 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 205.74 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9e6a804d-507a-4cbd-8bfa-a4c1249dcf42")
+		)
+		(pin "1"
+			(uuid "643fdfa9-5066-468d-9e99-cd691ca39481")
+		)
+		(instances
+			(project "skibidi-digital-vinyl-player"
+				(path "/e94e7ae2-0fbb-48c1-a258-8552ffb159a9"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 205.74 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2251fdb1-a5a6-430a-a884-f526ea7cdc2e")
+		(property "Reference" "SW7"
+			(at 205.74 119.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 205.74 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_1u"
+			(at 205.74 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 205.74 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "473befed-cf5b-4ade-ab05-65c607388cc5")
+		)
+		(pin "1"
+			(uuid "03b98e50-758e-47b2-a103-582f6d3316f2")
+		)
+		(instances
+			(project "skibidi-digital-vinyl-player"
+				(path "/e94e7ae2-0fbb-48c1-a258-8552ffb159a9"
+					(reference "SW7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 139.7 25.4 0)
 		(mirror y)
@@ -5022,6 +5799,74 @@
 			(project "skibidi-digital-vinyl-player"
 				(path "/e94e7ae2-0fbb-48c1-a258-8552ffb159a9"
 					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 205.74 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44627dee-4750-427b-87ed-e4af21439794")
+		(property "Reference" "SW6"
+			(at 205.74 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 205.74 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_1u"
+			(at 205.74 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 205.74 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "85471bc5-de6d-4c6b-b6af-3d210a0da304")
+		)
+		(pin "1"
+			(uuid "ee54946e-1bdb-4854-b04c-d71d06ab2f7b")
+		)
+		(instances
+			(project "skibidi-digital-vinyl-player"
+				(path "/e94e7ae2-0fbb-48c1-a258-8552ffb159a9"
+					(reference "SW6")
 					(unit 1)
 				)
 			)
@@ -5811,6 +6656,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 205.74 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "627fd556-f9f0-4cd8-ab1a-192f9bb3e229")
+		(property "Reference" "SW5"
+			(at 205.74 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 205.74 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_1u"
+			(at 205.74 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 205.74 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3a0ada04-788d-43ae-b88f-fcc1ac0bb092")
+		)
+		(pin "1"
+			(uuid "53923713-96a1-450d-bec0-26505372cc84")
+		)
+		(instances
+			(project "skibidi-digital-vinyl-player"
+				(path "/e94e7ae2-0fbb-48c1-a258-8552ffb159a9"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 49.53 27.94 0)
 		(mirror y)
@@ -6385,6 +7298,143 @@
 			(project "skibidi-digital-vinyl-player"
 				(path "/e94e7ae2-0fbb-48c1-a258-8552ffb159a9"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82632f71-1d6f-44ab-a56e-89b18e046a7b")
+		(property "Reference" "#PWR033"
+			(at 215.9 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08e3dd98-b899-4e40-a158-5e679f82d840")
+		)
+		(instances
+			(project "skibidi-digital-vinyl-player"
+				(path "/e94e7ae2-0fbb-48c1-a258-8552ffb159a9"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker")
+		(at 271.78 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86826f32-bee1-44a8-afe0-72786989fbbe")
+		(property "Reference" "LS1"
+			(at 276.86 80.6449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Speaker"
+			(at 276.86 84.4549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.526 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Speaker"
+			(at 271.78 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "23cad6f4-4d63-4aa5-b322-c365f8daea7f")
+		)
+		(pin "1"
+			(uuid "19bf1ff8-b236-4fae-a76b-5469d79ca0f7")
+		)
+		(instances
+			(project ""
+				(path "/e94e7ae2-0fbb-48c1-a258-8552ffb159a9"
+					(reference "LS1")
 					(unit 1)
 				)
 			)
@@ -6970,6 +8020,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Speaker")
+		(at 271.78 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab83e808-dfc2-4cc8-8844-db9cb86a21d6")
+		(property "Reference" "LS2"
+			(at 276.86 95.8849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Speaker"
+			(at 276.86 99.6949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.526 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Speaker"
+			(at 271.78 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8ff30802-9e1a-4112-805a-8b09cde099c8")
+		)
+		(pin "1"
+			(uuid "32d71808-aa8b-4cd5-97d9-a463764a31b7")
+		)
+		(instances
+			(project "skibidi-digital-vinyl-player"
+				(path "/e94e7ae2-0fbb-48c1-a258-8552ffb159a9"
+					(reference "LS2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 21.59 57.15 0)
 		(mirror y)
@@ -7355,6 +8475,74 @@
 			(project "skibidi-digital-vinyl-player"
 				(path "/e94e7ae2-0fbb-48c1-a258-8552ffb159a9"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 205.74 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dfad88c2-0974-45f2-b9c2-d44dc1ac8d3f")
+		(property "Reference" "SW3"
+			(at 205.74 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 205.74 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_1u"
+			(at 205.74 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 205.74 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7a52dad8-7ceb-4576-b55f-0e6e38c1debd")
+		)
+		(pin "1"
+			(uuid "73a12d39-a981-4630-8e6c-31218680397b")
+		)
+		(instances
+			(project "skibidi-digital-vinyl-player"
+				(path "/e94e7ae2-0fbb-48c1-a258-8552ffb159a9"
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -7796,7 +8984,7 @@
 		)
 	)
 	(sheet
-		(at 215.9 101.6)
+		(at 228.6 88.9)
 		(size 25.4 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7812,7 +9000,7 @@
 		)
 		(uuid "26c8acf6-1a9c-49db-9cdb-2e2fb7957408")
 		(property "Sheetname" "Amplifier"
-			(at 215.9 100.8884 0)
+			(at 228.6 88.1884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7821,12 +9009,82 @@
 			)
 		)
 		(property "Sheetfile" "amplifier.kicad_sch"
-			(at 215.9 114.8846 0)
+			(at 228.6 102.1846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "INL" input
+			(at 228.6 91.44 180)
+			(uuid "e8b6b177-908b-43f6-9301-f18303030e78")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INR" input
+			(at 228.6 93.98 180)
+			(uuid "051b84e0-0cb6-4ebd-b776-00f9e8f1c785")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LOUT+" output
+			(at 254 91.44 0)
+			(uuid "e3018af4-bf0c-4eed-ba69-a36b1abaecdc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LOUT-" output
+			(at 254 93.98 0)
+			(uuid "5bbdf6a5-777e-4129-83a8-8763e8c10d89")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ROUT+" output
+			(at 254 96.52 0)
+			(uuid "ea343ef7-0f77-45f0-9c70-421e3579fc67")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ROUT-" output
+			(at 254 99.06 0)
+			(uuid "42bb1113-f09e-4eb9-bb60-5d9cedc931a9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{RUN}" input
+			(at 228.6 99.06 180)
+			(uuid "8b7c6187-7fc4-4d66-bb75-9f102242c016")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -7838,7 +9096,49 @@
 		)
 	)
 	(sheet
-		(at 215.9 76.2)
+		(at 25.4 177.8)
+		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3fcb971e-d335-4668-a422-b2ed7f1e20b2")
+		(property "Sheetname" "USB"
+			(at 25.4 177.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb.kicad_sch"
+			(at 25.4 191.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "skibidi-digital-vinyl-player"
+				(path "/e94e7ae2-0fbb-48c1-a258-8552ffb159a9"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 228.6 64.77)
 		(size 25.4 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7854,7 +9154,7 @@
 		)
 		(uuid "646218ab-6cdb-47ab-9efc-c9540a87d451")
 		(property "Sheetname" "DAC"
-			(at 215.9 75.4884 0)
+			(at 228.6 64.0584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7863,12 +9163,62 @@
 			)
 		)
 		(property "Sheetfile" "dac.kicad_sch"
-			(at 215.9 89.4846 0)
+			(at 228.6 78.0546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "BCK" input
+			(at 228.6 71.12 180)
+			(uuid "6a2890ee-2647-4be2-990e-310cfde1b57b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIN" input
+			(at 228.6 68.58 180)
+			(uuid "53f57edf-d442-4800-98c9-963f560d1e3b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LCH" output
+			(at 254 68.58 0)
+			(uuid "f51b5319-7a30-4bdc-ae54-f2bb0f8a7eb6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RCH" output
+			(at 254 71.12 0)
+			(uuid "ccc9380b-55f1-4df9-afb0-f93e3c60b682")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "WS" input
+			(at 228.6 73.66 180)
+			(uuid "87b319ce-ea2a-48ea-9f59-8d04b476b128")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
