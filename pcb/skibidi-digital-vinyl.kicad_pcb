@@ -2087,7 +2087,7 @@
 		(at 165.5 95)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "TP1"
+		(property "Reference" "Prog"
 			(at 0 -1.448 0)
 			(layer "F.SilkS")
 			(uuid "9fdc1c32-e276-4de1-b072-7b3925228b27")
